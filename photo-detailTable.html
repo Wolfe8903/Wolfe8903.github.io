@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Lefkoff's Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+<!--
+    
+TemplateMo 556 Catalog-Z
+
+https://templatemo.com/tm-556-catalog-z
+
+-->
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-home mr-2"></i>
+                Joshua Lefkoff's Portfolio
+            </a>
+			
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1 active" aria-current="page" href="index.html">Photos</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link nav-link-2" href="work.html">Highlighted Engineering Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-3" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid tm-container-content tm-mt-60">
+        <div class="row mb-4">
+            <h2 class="col-12 tm-text-primary">Sisyphus Table</h2>
+        </div>
+		
+        <div class="row tm-mb-90">            
+            <div class="col-xl-4 col-lg-7 col-md-6 col-sm-12">
+                <video controls autoplay width=100% height=16%>
+				<source src="index_files\Table.mp4" type="video/mp4">
+				</video>
+                <img src="index_files/Table1.jpg" alt="Image" class="img-fluid">
+				<img src="index_files/Table2.jpeg" alt="Image" class="img-fluid">
+				<img src="index_files/Table3.jpeg" alt="Image" class="img-fluid">
+				<img src="index_files/Table4.jpeg" alt="Image" class="img-fluid">
+            </div>
+			
+			<div class="col-xl-8 col-lg-5 col-md-6 col-sm-12">
+					<div class="tm-bg-gray tm-video-details">
+					<p class="mb-4">
+                        “In a sense we are all Sisyphus, we have repetitive and sometimes seemingly pointless work, but even though it looks dull and boring in the end we must imagine Sisyphus happy with his life enjoying the little things and it’s multidimensionality” <br>
+						<br>
+						This table features a marble being guided through sand to draw mesmerizing images. Then, just as Sisyphus forever pushed the boulder, it’s work begins anew with a different design being drawn over the old. Featuring a wide range of 3D printed parts along with
+						various electronics and cuts of wood this project is truly a culmination of many of my interests. As a whole this was a massive challenge, however the biggest difficulties came from the homing sequence, drawing surface, and motor wiring.
+						</p>
+						<ul> 
+							<li>This entire system is in essence a CoreXY CNC machine which, rather than a spinng tool head, carries a magnet. In order for this magnet to know its location within the work space it must perform a homing sequence where, just as with a 3D printer, it will bump several limit switches in order to confirm its location.
+							This posed an issue when the magnet would miss the final limit switch, or not trigger at all on the first switch, and forced me to spend a lot of time making micro adjustments to each switch's position. </li> <br>
+							<li> Identifying the right drawing surface was difficult the material had to be stiff enough to hold up over time, but thin enough for the magnet's pull to reach the steel ball up above. I began with Luan Plywood only to find that after a month or so it began to droop and cause an awful scraping sound as the magnet rubbed on the underside.
+							This was followed by 1/2' plywood which turned out to be way too thick and prevent the magnet from getting a firm hold on the steel ball. I eventually stumbled upon on 1/4' foam board from Hobby Lobby and found it to be perfect in terms of thickness and strength with the added benefits of being cheap and easily cut to size. </li> <br>
+							<li>Lastly came the challenge of dealing with the motor wiring. I would recieve seemingly arbitrary errors when running patterns and for a long time I struggled to identify why. I would later come to learn that stepper motors in their movement require the controller to constantly cycle the provided voltage. This in turn genenerates Electromagnetic Interference within the wires and was triggering
+							false stops within the system. I solved this issue by wrapping the motor wires in grounded copper foil tape so as to sheild them from the other wires. </li>
+						</ul>
+						<p class = "mb-4"> The entire system runs on the 3D printer web interface known as Octoprint which is hosted on a local server by an onboard Raspbery Pi. The lights are controlled via Arduino Nano and the interactive cotroll panel and the movement systems 
+						by a an Arduino UNO with a CNC shield. The main upgrade added from the base design is a powerstrip along the bottom to allow for phone chargers and various other devices to be plugged in easily. This required me to design my own mounting bracket which could be screwed into the underside of the table. 
+						The CAD files (aside from the aforemention power strip bracket), wiring diagram, and cuts list for this project were all provided by Lewis from DIY Machines however all other work on this project was completed by myself. 
+						The STLs can be found here: <a href="https://www.diymachines.co.uk/kinetic-sand-art-coffee-table-self-drawing">Sisyphus Table</a> and <a href="https://www.printables.com/model/857679-bracket-for-globe-power-8-outlet-power-strip">Power Bracket</a>
+						</p>
+					</div>
+			</div> 
+		</div>
+	</div>
+    </footer>
+    
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>

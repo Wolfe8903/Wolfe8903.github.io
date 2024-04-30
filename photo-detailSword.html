@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Lefkoff's Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+<!--
+    
+TemplateMo 556 Catalog-Z
+
+https://templatemo.com/tm-556-catalog-z
+
+-->
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-home mr-2"></i>
+                Joshua Lefkoff's Portfolio
+            </a>
+			
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1 active" aria-current="page" href="index.html">Photos</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link nav-link-2" href="work.html">Highlighted Engineering Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-3" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid tm-container-content tm-mt-60">
+        <div class="row mb-4">
+            <h2 class="col-12 tm-text-primary">Master Sword</h2>
+        </div>
+        <div class="row tm-mb-90">            
+            <div class="col-xl-4 col-lg-7 col-md-6 col-sm-12">
+                <video controls autoplay width=100% height=100%>
+				<source src="index_files\Sword.mp4" type="video/mp4">
+				</video>
+            </div>
+			<div class="col-xl-8 col-lg-5 col-md-6 col-sm-12">
+                <div class="tm-bg-gray tm-video-details">
+					<p class="mb-4">
+                        “…courage need not be remembered, for it is never forgotten." <br> <br>
+						This light up model of The Master Sword along with the scabbard from The Legend of Zelda: Twilight Princess
+						took nearly an entire summer to complete. Both the scabbard and sword due to their size had to be printed in multiple pieces and then assembled,
+						sanded, and painted. The initial CAD work on this project was completed by Thingiverse user ChaosCoreTech, however, another user, mistic100, remixed the model to allow for a neopixel setup similar to Adafruit's 3D Printed Guardian Sword. 
+						This project was particularly challenging in that it required me to work with airbrushing paints. I couldn't find a spray paint in 
+						the proper shade of gold and opted to airbrush over hand painting the piece as airbrushing resulted in a much cleaner and even distribution. I used a large
+						cut up leather belt to secure the whole piece over my sholder. The STLs can be found here: 
+						<a href=https://www.thingiverse.com/thing:1449187>ChaosCoreTech's Sword</a>, <a href=https://www.thingiverse.com/thing:5165486>mistic100's Remixed Sword</a>, 
+						<a href="https://www.thingiverse.com/thing:1465131">ChaosCoreTech's Scabbard </a>, and <a href="https://learn.adafruit.com/breath-of-the-wild-guardian-sword-led-3d-printed/overview">Wiring Setup / Adafruit 3D Printed Guardian Sword</a>
+
+                    </p>
+				</div>
+			</div> 
+
+		</div>
+	</div>
+    </footer>
+    
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>

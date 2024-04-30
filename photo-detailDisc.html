@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Lefkoff's Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+<!--
+    
+TemplateMo 556 Catalog-Z
+
+https://templatemo.com/tm-556-catalog-z
+
+-->
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-home mr-2"></i>
+                Joshua Lefkoff's Portfolio
+            </a>
+			
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1 active" aria-current="page" href="index.html">Photos</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link nav-link-2" href="work.html">Highlighted Engineering Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-3" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid tm-container-content tm-mt-60">
+        <div class="row mb-4">
+            <h2 class="col-12 tm-text-primary">Disc Shooter</h2>
+        </div>
+        <div class="row tm-mb-90">            
+            <div class="col-xl-5 col-lg-7 col-md-6 col-sm-12">
+                <img src="index_files/Disc.jpg" alt="Image" class="img-fluid">
+				<img src="index_files/Disc2.jpg" alt="Image" class="img-fluid">
+				<img src="index_files/Disc3.jpg" alt="Image" class="img-fluid">
+            </div>
+			<div class="col-xl-7 col-lg-5 col-md-6 col-sm-12">
+                <div class="tm-bg-gray tm-video-details">
+                    <p class="mb-4">
+                        Fully designed, 3D printed, and asssembled by myself this 3D printed disc shooter was created for a project in the Tickle College of Engineering at the University Of Tennessee Knoxville.
+						The goal of this project was to produce a device of less than 50 grams and 25x25x40cm in volume which could fire a poker chip to multiple randomly chosen regions on a table top. 
+						A corresponding MatLab code was to be included that would provide the user the neccesary information for each shot given solely the input of which regions needed to be scored. 
+						In addition, the device could not be moved between shots, beyond using any built in aiming mechanism, but could be triggered by human interaction. <br> <br> The solution I chose for this challenge 
+						was a sort of slingshot-crossbow combination. I chose to 3D print my device both due to my experience with the technology and becuase I knew it would allow the device to easily fall below the weight limit without sacrificing functionality.
+						Featuring a free sliding firing block driven along a track by two rubber bands, the firing block would be held back at certain draw distances by 
+						3D printed arches. To fire the arches would be quickly removed allowing for the firing block to be drawn forward by the rubber bands. The arches were each of different lengths
+						so as to change the amount of elastic potential energy input, and thus kinetic energy output.
+						In order to approximate the elastic potential energy, it was required to experiementally determine the spring constant of my chosen rubber bands. This was acheived using MATLAB's polynomial fitting and evaluator functions. 
+						Once elastic potential energy was determined it could be converted by the same MATLAB code into a value for kinetic energy and after accounting for friction and other factors, the final position of the disc. From there measurements were 
+						taken of the game board and a corresponding set of coordinates assigned to each possible score zone. A combination of user input and conditonal statements were used in order to allow for an input of scoring zone locations and output of drawback distance.
+						The neccesary angle to reach zones not directly in front of the shooter were calculated via trigonometric functions. These angles were converted to gear rotations by the MATLAB program and the larger base gear adjusted by the smaller turner gear.
+                    </p>
+				</div>
+			</div> 
+		</div>
+	</div>
+    </footer>
+    
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>
