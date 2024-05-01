@@ -153,7 +153,8 @@ a:hover { color:#296381; } /* Hover text color for all navbar items */
 .tm-container-small { max-width: 1050px; }
 .btn { border-radius: 0; }
 .btn-primary {
-    background-color: #3399CC; /*Default background color of next page */
+    background-color: #3399CC; /*Default background color of enabled next / prev button */
+	color: black; /*Default text color of enabled next / prev button */
     border: 0;
     border-radius: 5px;
     padding: 12px 50px 14px;
@@ -167,7 +168,8 @@ a:hover { color:#296381; } /* Hover text color for all navbar items */
 
 .btn-primary.disabled, 
 .btn-primary:disabled {
-    background-color: #3399CC; /* Default color of previous button */
+    background-color: #3399CC; /* Default color of disabled next / prev button */
+	color:black; /* Text color of disabled button */
     pointer-events: all;
     cursor: not-allowed;
 }
@@ -183,7 +185,7 @@ a:hover { color:#296381; } /* Hover text color for all navbar items */
 
 .navbar-toggler:focus { box-shadow: none; }
 .navbar-brand {
-    color: #3399CC; /*Top Left Title Color*/
+    color: #3399CC; /*Website Left Title Color*/
     font-size: 1.6rem;
 }
 
@@ -205,7 +207,7 @@ body {
 .tm-text-primary { color: #3399CC; } /* Page title color */
 .tm-text-secondary { color: #CC6699; } /* ?? */
 a.tm-text-primary:hover { color:#666666; } /* ?? */
-.tm-bg-gray { background-color: #EEEEEE; } /* ?? */
+.tm-bg-gray { background-color: #EEEEEE; } /* Detail page text box color */
 .tm-input-paging {
     width: 40px;
     border-radius: 0;
@@ -218,7 +220,7 @@ a.tm-text-primary:hover { color:#666666; } /* ?? */
 .nav-item:last-child { margin-right: 0; }
 
 .nav-link {
-    color: #3399CC; /*Default nav button color */
+    color: #3399CC; /*Default nav bar text color */
     border-bottom: 4px solid transparent;
     font-size: 1.2rem;
 }
@@ -244,8 +246,8 @@ a.tm-text-primary:hover { color:#666666; } /* ?? */
 }
 
 p, .tm-text-gray { color: #000; } /* Detail caption text color */
-.tm-text-gray-light { color: #666; } /* Main page caption text color */
-.tm-text-gray-dark { color: #666; } /* ?? */
+.tm-text-gray-light { color: #000; } /* Main page caption text color */
+.tm-text-gray-dark { color: #000; } /* ?? */
 
 .tm-video-item {
     position: relative;
@@ -328,8 +330,8 @@ p, .tm-text-gray { color: #000; } /* Detail caption text color */
     width: 60px;
     height: 60px;
     font-size: 1.1rem;
-    color: #000000; /* Paging numbers at bottom text color */
-    background-color: #EEEEEE; /* Default background of paging buttons at bottom */
+    color: #000000; /* Paging numbers at bottom default text color */
+    background-color: #EEEEEE; /* Default background of number paging buttons at bottom */
     margin: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -338,7 +340,7 @@ p, .tm-text-gray { color: #000; } /* Detail caption text color */
 
 .tm-paging-link:hover,
 .tm-paging-link.active {
-    background-color: #3399CC; /* Hover and active paging button colors */
+    background-color: #3399CC; /* Hover and active paging number button colors */
     color: #000000;  /* Active paging number text color */
 }
 
@@ -394,6 +396,13 @@ figure.effect-ming:hover img { opacity: 0.4; }
 .tm-footer-links li {
     list-style: none;
     margin-bottom: 5px;    
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color:#EEEEEE; /* Footer bar color */
+  color: black;
 }
 
 .tm-footer-links li a { color: #999999; } /* ?? */
