@@ -163,12 +163,13 @@ a:hover { color:#296381; } /* Hover text color for all navbar items */
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color:#296381; /* Hover color for next page */
+	color: black; /* Text hover color for next / prev text */
+    background-color:#296381; /* Background hover color for next / prev text page */
 }
 
 .btn-primary.disabled, 
 .btn-primary:disabled {
-    background-color: #3399CC; /* Default color of disabled next / prev button */
+    background-color: #3399CC; /* Default color of disabled button */
 	color:black; /* Text color of disabled button */
     pointer-events: all;
     cursor: not-allowed;
