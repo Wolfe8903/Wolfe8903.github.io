@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Lefkoff's Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+	<link rel="icon" type="image/png" href="index_files/favicon.png?v=2" />
+</head>
+
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-home mr-2"></i>
+                Joshua Lefkoff's Portfolio
+            </a>
+			
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1 active" aria-current="page" href="index.html">Completed Projects</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link nav-link-2" href="work.html">Highlighted Engineering Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-3" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid tm-container-content tm-mt-60">
+        <div class="row mb-4">
+            <h2 class="col-12 tm-text-primary">Seven Segment Display Clock</h2>
+        </div>
+        <div class="row tm-mb-90">            
+            <div class="col-xl-6 col-lg-7 col-md-6 col-sm-12">
+			    <video controls autoplay width=100% height=45%>
+				<source src="index_files\Clock1.mov" type="video/mp4">
+				</video>
+				<video controls autoplay width=100% height=45%>
+				<source src="index_files\Clock2.mov" type="video/mp4">
+				</video>
+			</div>
+			<div class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
+                <div class="tm-bg-gray tm-video-details">
+                    <p class="mb-4">
+                        "All we have to decide is what to do with the time that is given us." <br> (J.R.R. Tolkien) <br> <br>
+						This Seven Segment Display Clock was almost entirely 3D printed and was fully assembled by myself. 
+						All of the original design work was completed by JBV Creative (Engineezy). Each segment is rotated by a rack and pinion system in which the rack is driven forward by a camshaft in the rear. 
+						Each of the four camshafts are rotated individually by a motor mounted to the module. One of the biggest challenges in this project was making the gear teeth between the motor and camshaft mesh correctly. 
+						I was ultimately forced to make several modifications to the original model, such as entirely remodeling the gears to be herringbone rather than spur, in order to get
+						all four modules working consistently. The time is tracked by a Real Time Clock module (RTC) which features its own power supply in order to keep time even when the arduino nano is powered down. This module was
+						entirely unfamiliar to me and posed many challenges in proper setup.
+						Lastly, just to clean up the electronics, I opted to redesign the base of the whole system to feature mounting points for both the servo driver board and RTC.
+						The STLs can be found here: <a href="https://engineezy.com/products/the-rack-driven-7-segment-display">Seven Segment Display Clock</a>, <a href="https://www.printables.com/model/902761-gear-and-pin-replacements">Redesigned components</a>, and <a href="https://www.printables.com/model/898808-central-clock-connector-with-electronics-mount">Central Connector with Electronics Mount</a>
+						
+                    </p>
+				</div>
+			</div> 
+		</div>
+	</div>
+	<footer> 
+	<a target="_blank" href="https://icons8.com/icon/37817/3d-printer">3D Printer</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+	</footer>
+
+    
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>
